@@ -1,0 +1,81 @@
+*{
+    font-family: helvetica,sans-serif;
+    box-sizing: border-box;
+    color: darkslategray;
+}
+body{
+    padding:  1vw 2vw;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.flexhead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: darkslategray 3px solid;
+    margin-bottom: 1vw;
+
+}
+.flexnav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+nav a{
+    margin: 1vw 1vw;
+    text-decoration: none;
+    
+    font-weight: 700;
+}
+
+.flexabout{
+    display:flex;
+
+}
+.flexabout img{
+    width: 300px;
+    border-radius: 5%;
+    object-fit: cover;
+    margin-left: 5%;
+}
+.swipeable{
+    overflow: auto;
+    white-space: nowrap;
+    border-top: darkslategray 2px solid;
+    border-bottom: darkslategray 2px solid;
+
+}
+.swipeable::-webkit-scrollbar{
+    display: none;
+}
+.swipeable figure{
+    display: inline-block;
+    width:20vw;
+    min-width: 200px;
+    text-align: center;
+    
+}
+.swipeable figure img{
+    width:100%;
+    border-radius: 10%;
+}
+.flexskills{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.flexskills img{
+    width:75px;
+    height:auto;
+    margin:1vw;
+    object-fit: scale-down;
+}
+footer{
+    padding-top: 2vw;
+    width:100%;
+    text-align: center;
+}
+.heart{
+    color: orange;
+}
