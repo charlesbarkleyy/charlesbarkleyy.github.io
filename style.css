@@ -63,7 +63,7 @@ nav a{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .flexskills img{
     width:75px;
@@ -78,4 +78,29 @@ footer{
 }
 .heart{
     color: orange;
+}
+
+@media only screen and (max-width: 600px) {
+    .name{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .flexhead{
+        display: block;
+    }
+    .flexnav{
+        padding:0;
+    }
+    .flexabout img{
+        width: 100%;
+        height: auto;  
+        float: right;
+    }
+    .flexabout{
+        display: inline-block;
+    }
+    h2{
+        text-align: center;
+    }
 }
