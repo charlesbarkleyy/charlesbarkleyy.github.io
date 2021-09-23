@@ -38,6 +38,12 @@ nav a{
     object-fit: cover;
     margin-left: 5%;
 }
+.contact img{
+    width: 30px;
+    border-radius: 5%;
+    object-fit: contain;
+    margin-right: 5%;
+}
 .swipeable{
     overflow: auto;
     white-space: nowrap;
