@@ -52,14 +52,14 @@ nav ul li:hover, nav ul li a:hover{
     padding-right: 5%;
 }
 
-.testgrid{
+.indexgrid{
     display: grid;
     max-width: 100%;
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: repeat(5, 1fr);
 }
 
-.testgrid img{
+.indexgrid img{
     padding: 1vw 1.5vw;
 }
 
@@ -150,7 +150,7 @@ img.featured{
     background-color: thistle;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 400px){
 
     .bar{
         display: block;
@@ -159,10 +159,13 @@ img.featured{
         background-color: #90A58A;
         border-radius: 10px;
         margin-bottom: 3px;
+        transition: all .5s ease-in-out;
+
     }
     
     .nav_menu{
         display: none;
+        
     }
     .nav_menu.active{
         display: flex;
@@ -175,6 +178,8 @@ img.featured{
         background-color: whitesmoke;
         opacity: 95%;
         height: 100%;
+        transition: all .5s ease-in-out;
+        
     }
     nav ul{
         display: flex;
