@@ -110,7 +110,15 @@
         </section>
     </main>
     <footer>
-        <button class='personalize newcolor' type="button" onclick="colorPicker()">Personalize</button>
+        <button class='personalize newcolor' type="button" id="personalize">Personalize</button>
     </footer>
+    <div class = "namePopup">
+        <form id = "nameForm" onSubmit="return false;">
+            <h1>Welcome</h1>
+            <br>
+            <p>Please enter your name to continue</p>
+            <input type="password" name="human" id="inputName">
+        </form>
+    </div>
 </body>
 </html>
