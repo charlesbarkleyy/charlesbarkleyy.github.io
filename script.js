@@ -23,15 +23,26 @@ burger.addEventListener("click",mobilemenu)
 // Name pop up window
 let names = [];
 let nameForm = document.getElementById('nameForm');
+let user = localStorage.getItem('user');
 function saveNames(){
-   let username = document.getElementById("inputName").value
-   names.push(username);
-   console.log(names)
-   document.querySelector(".namePopup").classList.toggle("active");
+    let username = document.getElementById("inputName").value
+    window.localStorage.setItem('user',username)
+    names.push(username);
+    console.log(names)
+    document.querySelector(".namePopup").classList.toggle("active");
+ }
+if(user === null){
+    nameForm.addEventListener("submit",saveNames)
+}else{
+    document.querySelector(".namePopup").classList.toggle("active");  
 }
 
+user = localStorage.getItem('user');
+console.log(user)
 
-nameForm.addEventListener("submit",saveNames)
+
+
+
 
 
 
