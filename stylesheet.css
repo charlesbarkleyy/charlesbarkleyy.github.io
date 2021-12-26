@@ -24,7 +24,7 @@ nav ul li:hover, nav ul li a:hover{
 
 
 .sectiondivs{
-    background-color: #90A58A;
+    background-color: #96bfe6;
     padding-top: 2vw;
     padding-bottom: 2vw;
     font-weight: 100;
@@ -140,7 +140,7 @@ img.featured{
     display: block;
     margin: auto;
     border-radius: 5px;
-    background-color: #90A58A;
+    background-color: #96bfe6;
     color: whitesmoke;
     padding: .5vw 2vw;
     font-size: 1vw;
@@ -189,7 +189,7 @@ img.featured{
         display: block;
         width: 3vw;
         height: .5vw;
-        background-color: #90A58A;
+        background-color: #96bfe6;
         border-radius: 10px;
         margin-bottom: 3px;
         transition: all .5s ease-in-out;
