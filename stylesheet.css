@@ -184,7 +184,7 @@ img.featured{
 }
 
 @media only screen and (max-width: 550px){
-
+/*HAMBURGER MENU*/
     .bar{
         display: block;
         width: 3vw;
@@ -225,6 +225,7 @@ img.featured{
         display: block;
         font-size: 4vw;
     }
+    /*HAMBURGER MENU ACTIVE*/
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
     }
@@ -241,5 +242,42 @@ img.featured{
         top: 22px;
         margin:0;
         z-index: 2;
+    }
+
+
+    /*MOBILE LAYOUT NO CAPTIONS SINGLE COLUMN*/
+    .indexgrid{
+        grid-template-columns: 1fr;
+    }
+    
+    img.featured.row_one, img.featured.row_2, img.featured.row_3, img.featured.row_4, img.featured.row_5 {
+        grid-row: initial;
+    }
+    
+    .right, .left{  
+        grid-column: auto;
+    }
+    div.captions{
+        display:none;
+    }
+
+    .albums{
+        display: grid;
+        grid-template-columns: repeat(2,  1fr);  
+    }
+    .albums .Albumicon img{
+        width: 40vw;
+        height: 25vw;
+        object-fit: cover;
+    }
+    .albums .Albumicon:hover img{
+        width: 40vw;
+    }
+    .albums .Albumicon{
+        text-align: center;
+        font-size: 3vw;
+    }
+    .personalize{
+        display: none;
     }
 }
