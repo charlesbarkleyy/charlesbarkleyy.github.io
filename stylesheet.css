@@ -185,6 +185,26 @@ img.featured{
 
 @media only screen and (max-width: 550px){
 /*HAMBURGER MENU*/
+    header{
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        display: flex;
+    }
+    .hamburger{
+        padding-left: 3vw;
+        align-self: center;
+
+    }
+
+    #title-1{
+        margin-top: 0;
+       
+    }
+    #title-2{
+        margin-bottom: 0;
+        align-self: flex-end;
+    }
+
     .bar{
         display: block;
         width: 3vw;

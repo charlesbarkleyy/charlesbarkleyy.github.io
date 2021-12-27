@@ -20,3 +20,21 @@ img.xsmall{
     width:50%;
 }
 
+@media only screen and (max-width: 550px){
+    .picturesGrid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2vw;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    img.small{
+        width:90%;
+    }
+    img.xsmall{
+        width:80%;
+    }
+
+
+
+}
+
