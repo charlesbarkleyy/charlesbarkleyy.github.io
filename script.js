@@ -10,34 +10,34 @@ function mobilemenu() {
 burger.addEventListener("click",mobilemenu)
 
 // Name pop up window
-let names = [];
 let nameForm = document.getElementById('nameForm');
 let user = localStorage.getItem('user');
 function saveNames(){
     let username = document.getElementById("inputName").value
     window.localStorage.setItem('user',username)
-    names.push(username);
-    console.log(names)
     document.querySelector(".namePopup").classList.toggle("active");
  }
  
+
 if(user === null){
     nameForm.addEventListener("submit",saveNames)
-
 }else{
     document.querySelector(".namePopup").classList.toggle("active");  
 }
 
 user = localStorage.getItem('user');
-function addNameToSentence(){
-    let paragraph = document.getElementById('nameadd');
-    user += ".";
-    let name = document.createTextNode(user);
-    paragraph.appendChild(name);
+// Adding name to first paragraph
 
+if(user != null){
+let addNameToSentence = function(){
+    let person = ", "+ user +".";
+    document.getElementById("nameadd").insertAdjacentText("beforeend",person)
 }
+
 addNameToSentence();
-console.log(user)
+}
+
+
 
 //for loop to create new color scheme
 const colorPicker = function(){
