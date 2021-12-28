@@ -193,6 +193,17 @@ img.featured{
     color: #0D2B52;
     
 }
+#message{
+    display:inline-block;
+    position: relative;
+    text-align: end;
+    color: #0D2B52;
+    font-size: 1.5vw;
+    top: -6vw;
+    left: 15vw;
+    
+
+}
 
 @media only screen and (max-width: 550px){
 /*HAMBURGER MENU*/
@@ -201,6 +212,8 @@ img.featured{
         padding-bottom: 2vw;
         display: flex;
     }
+
+
     .hamburger{
         padding-left: 3vw;
         align-self: center;
@@ -209,11 +222,16 @@ img.featured{
 
     #title-1{
         margin-top: 0;
-       
     }
     #title-2{
         margin-bottom: 0;
         align-self: flex-end;
+    }
+    #message{
+        font-size: 1.5vw;
+        top: -5vw;
+        left: 11vw;
+        
     }
 
     .bar{

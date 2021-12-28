@@ -20,13 +20,23 @@ function saveNames(){
     console.log(names)
     document.querySelector(".namePopup").classList.toggle("active");
  }
+ 
 if(user === null){
     nameForm.addEventListener("submit",saveNames)
+
 }else{
     document.querySelector(".namePopup").classList.toggle("active");  
 }
 
 user = localStorage.getItem('user');
+function addNameToSentence(){
+    let paragraph = document.getElementById('nameadd');
+    user += ".";
+    let name = document.createTextNode(user);
+    paragraph.appendChild(name);
+
+}
+addNameToSentence();
 console.log(user)
 
 //for loop to create new color scheme
