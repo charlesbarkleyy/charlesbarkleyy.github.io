@@ -22,20 +22,33 @@ function saveNames(){
 if(user === null){
     nameForm.addEventListener("submit",saveNames)
 }else{
-    document.querySelector(".namePopup").classList.toggle("active");  
+    try{
+        document.querySelector(".namePopup").classList.toggle("active"); 
+    }catch(e){} 
 }
 
 user = localStorage.getItem('user');
 // Adding name to first paragraph
 
 if(user != null){
+    try{
 let addNameToSentence = function(){
     let person = ", "+ user +".";
-    document.getElementById("nameadd").insertAdjacentText("beforeend",person)
+    document.getElementById("nameadd").insertAdjacentText("beforeend",person);
+    
 }
 
 addNameToSentence();
+}catch(e){};
 }
+
+//Changing title 1 to the user inputted name
+let personalName = document.getElementById("title-1");
+let test = document.getElementById("bodytest");
+if(!(test)){
+personalName.innerHTML = user;
+};
+
 
 
 
