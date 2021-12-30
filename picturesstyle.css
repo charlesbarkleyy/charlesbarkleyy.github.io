@@ -6,6 +6,7 @@
 }
 .picturesGrid img{
     width: 100%;
+    border-radius: 5px;
 }
 img#main{
     grid-column: 1/-1;
